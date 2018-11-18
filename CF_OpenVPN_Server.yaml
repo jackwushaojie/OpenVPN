@@ -157,6 +157,6 @@ Outputs:
       Fn::GetAtt:
         - VPNServerInstance
         - PublicIp
-  WebdigiNotes:
-    Description: Allow upto 5 minutes after setup to connect. 
+  Notes:
+    Description: Allow upto 5 minutes after setup to connect.
     Value: Comments
