@@ -14,4 +14,4 @@ Instructions to deploy the VPN Server.
  4. The Stack will be created & Initialed in about 5 minutes.
  5. Check the VPN Server instance's public IP from the stack output or from EC2 console
  6. Connect a VPN client to this VPN Server.
- 7
+ 7. test1
