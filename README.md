@@ -15,3 +15,4 @@ Instructions to deploy the VPN Server.
  5. Check the VPN Server instance's public IP from the stack output or from EC2 console
  6. Connect a VPN client to this VPN Server.
  7. test2
+8. branch 1
