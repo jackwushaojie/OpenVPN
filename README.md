@@ -2,8 +2,8 @@ The project is to create an openVPN Ubuntu Server in AWS using Cloudformation
 
 Instructions to deploy the VPN Server.
 
-1. copy the CF_OpenVPN_Server.yaml to a S3 Bucket.
-2. Get the S3 URL of CF_OpenVPN_Server.yaml and run in Cloudformation console.
+1. Download the CF_OpenVPN_Server.yaml to your computer.
+2. Run CF_OpenVPN_Server.yaml from your AWS Cloudformation console.
 3. Input the below parameter
  - Stack Name
  - Instance type
