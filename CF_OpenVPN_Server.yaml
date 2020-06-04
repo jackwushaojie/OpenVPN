@@ -26,51 +26,61 @@ Parameters:
   Size:
     Description: Instance Type
     Type: String
-    Default: Standard.VPN-t2.micro
+    Default: Standard.VPN-t3.micro-Free-Tier-Eligible
     AllowedValues:
-    - Standard.VPN-t2.micro
+    - Standard.VPN-t3.micro-Free-Tier-Eligible
     - High.Speed.VPN-t2.medium
     - Ultra.High.Speed.VPN-m3.xlarge
 
 Mappings:
   AWSInstanceType2Arch:
-    Standard.VPN-t2.micro:
-      InstanceType: t2.micro
+    Standard.VPN-t3.micro-Free-Tier-Eligible:
+      InstanceType: t3.micro
     High.Speed.VPN-t2.medium:
-      InstanceType: t2.medium
+      InstanceType: t3.medium
     Ultra.High.Speed.VPN-m3.xlarge:
-      InstanceType: m3.xlarge
+      InstanceType: m5.xlarge
   AWSRegionArch2AMI:
     us-east-1:
-      HVM64: ami-80861296
+      HVM64: ami-039a49e70ea773ffc
     us-east-2:
-      HVM64: ami-618fab04
+      HVM64: ami-07c1207a9d40bc3bd
     us-west-1:
-      HVM64: ami-2afbde4a
+      HVM64: ami-0f56279347d2fa43e
     us-west-2:
-      HVM64: ami-efd0428f
+      HVM64: ami-003634241a8fcdec0
+    eu-south-1:
+      HVM64: ami-0748c300929be9a20
+    eu-north-1:
+      HVM64: ami-050981837962d44ac
     eu-west-1:
-      HVM64: ami-a8d2d7ce
+      HVM64: ami-0701e7be9b2a77600
     eu-west-2:
-      HVM64: ami-f1d7c395
+      HVM64: ami-0eb89db7593b5d434
     eu-west-3:
-      HVM64: ami-c1cf79bc
+      HVM64: ami-08c757228751c5335
     eu-central-1:
-      HVM64: ami-060cde69
+      HVM64: ami-0e342d72b12109f91
     ap-northeast-1:
-      HVM64: ami-afb09dc8
+      HVM64: ami-0278fe6949f6b1a06
     ap-northeast-2:
-      HVM64: ami-66e33108
+      HVM64: ami-00edfb46b107f643c
     ap-southeast-1:
-      HVM64: ami-8fcc75ec
+      HVM64: ami-0f7719e8b7ba25c61
     ap-southeast-2:
-      HVM64: ami-96666ff5
-    sa-east-1:
-      HVM64: ami-4090f22c
+      HVM64: ami-04fcc97b5f6edcd89
+    af-south-1:
+      HVM64: ami-0914f03407aa25fb8
+    ap-east-1:
+      HVM64: ami-c790d6b6
     ap-south-1:
-      HVM64: ami-c2ee9dad
+      HVM64: ami-0b44050b2d893d5f7
     ca-central-1:
-      HVM64: ami-b3d965d7
+      HVM64: ami-0edd51cc29813e254
+    me-south-1:
+      HVM64: ami-051274f257aba97f9
+    sa-east-1:
+      HVM64: ami-077d5d3682940b34a
 
 Resources:
   VPNServerInstance:
@@ -158,5 +168,5 @@ Outputs:
         - VPNServerInstance
         - PublicIp
   Notes:
-    Description: Allow upto 5 minutes after setup to connect.
+    Description: The VPN Server needs about 5 minutes to configure itself. Please connect after 5 minutes.
     Value: Comments
