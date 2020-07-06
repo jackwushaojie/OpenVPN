@@ -29,8 +29,8 @@ Parameters:
     Default: Standard.VPN-t3.micro-Free-Tier-Eligible
     AllowedValues:
     - Standard.VPN-t3.micro-Free-Tier-Eligible
-    - High.Speed.VPN-t2.medium
-    - Ultra.High.Speed.VPN-m3.xlarge
+    - Medium.VPN-t2.medium
+    - Large.VPN-m3.xlarge
 
 Mappings:
   AWSInstanceType2Arch:

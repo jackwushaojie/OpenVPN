@@ -1,3 +1,7 @@
+For detail explanation and video instructions, please visit my blog post at https://shaojie.com/2020/06/06/setup-your-free-private-vpn-server-in-less-than-10-minutes/
+
+===============================
+
 The project is to create an openVPN Ubuntu Server in AWS using Cloudformation
 
 Instructions to deploy the VPN Server.
