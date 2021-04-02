@@ -113,7 +113,8 @@ Resources:
               YOUR_PASSWORD=${VPNPassword}
             - |
               #VPN 1 - L2TP IPSEC Server
-              wget https://github.com/jackwushaojie/OpenVPN/blob/master/vpnsetup.sh?raw=true -O vpnsetup.sh && sudo \
+              #wget https://github.com/jackwushaojie/OpenVPN/blob/master/vpnsetup.sh?raw=true -O vpnsetup.sh && sudo \
+              wget https://github.com/jackwushaojie/OpenVPN/raw/master/vpnsetup-2021-04-02.sh -O vpnsetup.sh && sudo \
               VPN_IPSEC_PSK=$YOUR_IPSEC_PSK \
               VPN_USER=$YOUR_USERNAME \
               VPN_PASSWORD=$YOUR_PASSWORD sh vpnsetup.sh
