@@ -26,11 +26,11 @@ Parameters:
   Size:
     Description: Instance Type
     Type: String
-    Default: Standard.VPN-t3.micro-Free-Tier-Eligible
+    Default: Single-user.VPN-t3.nano
     AllowedValues:
     - Standard.VPN-t3.micro-Free-Tier-Eligible
     - Medium.VPN-t2.medium
-    - Large.VPN-m3.xlarge
+    - Single-user.VPN-t3.nano
 
 Mappings:
   AWSInstanceType2Arch:
@@ -38,8 +38,8 @@ Mappings:
       InstanceType: t3.micro
     High.Speed.VPN-t2.medium:
       InstanceType: t3.medium
-    Ultra.High.Speed.VPN-m3.xlarge:
-      InstanceType: m5.xlarge
+    Single-user.VPN-t3.nano:
+      InstanceType: t3.nano
   AWSRegionArch2AMI:
     us-east-1:
       HVM64: ami-039a49e70ea773ffc
